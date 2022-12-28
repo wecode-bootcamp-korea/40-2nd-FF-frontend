@@ -5,6 +5,12 @@ const theme = {
   middleGrey: '#717171',
   deepGrey: '#222222',
   hoverGrey: '#DBDBDB',
+
+  flex: (justify = 'space-between', align = 'center') => `
+  display: flex;
+  justify-content: ${justify};
+  align-items: ${align};
+`,
 };
 
 export default theme;
