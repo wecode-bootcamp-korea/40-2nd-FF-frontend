@@ -1,4 +1,22 @@
 [
-  { "id": 1, "name": "장정 정", "image": "/images/acorn.jpeg" },
-  { "id": 2, "name": "반룡산", "image": "/images/acorn_ghost.jpg" }
+  {
+    "name": "장정 정",
+    "thumbnail_image": "/images/acorn.jpeg",
+    "id": 1
+  },
+  {
+    "name": "농민백암순대 본점",
+    "thumbnail_image": "/images/acorn_ghost.jpg",
+    "id": 2
+  },
+  {
+    "name": "모쿠",
+    "thumbnail_image": "/images/acorn.jpeg",
+    "id": 3
+  },
+  {
+    "name": "마초야",
+    "thumbnail_image": "/images/acorn_ghost.jpg",
+    "id": 4
+  }
 ]

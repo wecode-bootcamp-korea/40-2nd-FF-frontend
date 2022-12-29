@@ -1,0 +1,22 @@
+[
+  {
+    "type": "분위기있는",
+    "posts": [
+      {
+        "id": 1,
+        "name": "유리카모메",
+        "image": "/images/acorn.jpeg"
+      },
+      {
+        "id": 2,
+        "name": "유리카모메",
+        "image": "/images/acorn.jpeg"
+      },
+      {
+        "id": 3,
+        "name": "유리카모메",
+        "image": "/images/acorn.jpeg"
+      }
+    ]
+  }
+]

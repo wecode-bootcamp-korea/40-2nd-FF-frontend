@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Slider from 'react-slick';
 import styled from 'styled-components/macro';
 
@@ -40,17 +40,10 @@ function PrevArrow(props) {
   );
 }
 
-const MainSlick = () => {
-  const [restaurant, setRestaurant] = useState([]);
-
-  useEffect(() => {
-    fetch('/data/mainSlickData.json')
-      .then(res => res.json())
-      .then(setRestaurant);
-  }, []);
-
+const MainSlick = props => {
+  const { type, posts } = props;
   const settings = {
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
@@ -61,19 +54,17 @@ const MainSlick = () => {
 
   return (
     <SlickList>
-      {restaurant.map(list => (
-        <Slick key={list.id}>
-          <TitleName>{list.mood}</TitleName>
-          <Slider {...settings}>
-            {list.detail.map(name => (
-              <List key={name.id}>
-                <DetailImage src={name.thumbnail} />
-                <Detail>{name.name}</Detail>
-              </List>
-            ))}
-          </Slider>
-        </Slick>
-      ))}
+      <Slick>
+        <TitleName>{type}</TitleName>
+        <Slider {...settings}>
+          {posts.map(name => (
+            <List key={name.id}>
+              <DetailImage src={name.image} />
+              <Detail>{name.name}</Detail>
+            </List>
+          ))}
+        </Slider>
+      </Slick>
     </SlickList>
   );
 };
@@ -100,6 +91,7 @@ const TitleName = styled.div`
 `;
 
 const List = styled.div`
+  display: flex;
   width: 300px;
   height: 300px;
   text-align: center;
