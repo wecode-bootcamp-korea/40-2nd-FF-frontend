@@ -1,0 +1,33 @@
+{
+  "name": "찐분식 선릉점",
+  "address": "서울 강남구 삼성동 143-33",
+  "type": "음식점 > 분식",
+  "phone_number": "070-8118-9990",
+  "longitude": "127.053360359216",
+  "latitude": "37.506573186375",
+  "id": 1,
+  "likeds": 240,
+  "thumbnail_Image": "https://www.shutterstock.com/image-photo/lobster-shrimp-on-open-buffet-600w-1939408507.jpg",
+  "content": [
+    {
+      "id": 1,
+      "name": "김학진",
+      "text": "여기 맛있어요",
+      "rating": 80,
+      "taste": 4,
+      "price": 4,
+      "service": 3,
+      "img": "https://www.shutterstock.com/image-photo/grilling-shashlik-on-barbecue-grill-600w-1056615485.jpg"
+    },
+    {
+      "id": 2,
+      "name": "김학진",
+      "text": "여기 맛없어요",
+      "rating": 60,
+      "taste": 2,
+      "price": 3,
+      "service": 2,
+      "img": "https://www.shutterstock.com/image-photo/sausage-shish-kebabs-on-skewers-600w-13576303.jpg"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "type": "격식있는",
+    "posts": [
+      {
+        "id": 1,
+        "name": "장정 정",
+        "image": "/images/acorn_ghost.jpg"
+      },
+      {
+        "id": 2,
+        "name": "장정 정",
+        "image": "/images/acorn_ghost.jpg"
+      },
+      {
+        "id": 3,
+        "name": "장정 정",
+        "image": "/images/acorn_ghost.jpg"
+      }
+    ]
+  }
+]

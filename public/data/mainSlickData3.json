@@ -1,0 +1,22 @@
+[
+  {
+    "type": "서민적인",
+    "posts": [
+      {
+        "id": 1,
+        "name": "농민백암순대 본점",
+        "image": "/images/acorn.jpeg"
+      },
+      {
+        "id": 2,
+        "name": "농민백암순대 본점",
+        "image": "/images/acorn.jpeg"
+      },
+      {
+        "id": 3,
+        "name": "농민백암순대 본점",
+        "image": "/images/acorn.jpeg"
+      }
+    ]
+  }
+]

@@ -24,7 +24,7 @@ const MainTop = () => {
     <Slider {...settings}>
       {images.map(list => (
         <TopBox key={list.id}>
-          <TopImages src={list.image} />
+          <TopImages src={list.thumbnail_image} />
 
           <MainLink to="/">{list.name}</MainLink>
         </TopBox>
