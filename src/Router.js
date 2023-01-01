@@ -5,23 +5,20 @@ import Signup from './pages/Signup/Signup';
 import Main from './pages/Main/Main';
 import GourmetDetail from './pages/GourmetDetail/GourmetDetail';
 import GourmetList from './pages/GourmetList/GourmetList';
-import Reservation from './pages/Reservation/Reservation';
-import Nav from './components/Nav/Nav';
-import Footer from './components/Footer/Footer';
+import NavLayout from './components/Outlet/NavLayout';
 
 const Router = () => {
   return (
     <BrowserRouter>
-      <Nav />
       <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/main" element={<Main />} />
-        <Route path="/Detail" element={<GourmetDetail />} />
-        <Route path="/List" element={<GourmetList />} />
-        <Route path="/reservation" element={<Reservation />} />
-        <Route path="/Signup" element={<Signup />} />
+        <Route element={<NavLayout />}>
+          <Route path="/" element={<Login />} />
+          <Route path="/main" element={<Main />} />
+          <Route path="/Detail" element={<GourmetDetail />} />
+          <Route path="/List" element={<GourmetList />} />
+        </Route>
+        <Route path="/signup" element={<Signup />} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 };
