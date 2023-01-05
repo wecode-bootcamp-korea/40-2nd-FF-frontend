@@ -5,6 +5,7 @@ import Signup from './pages/Signup/Signup';
 import Main from './pages/Main/Main';
 import GourmetDetail from './pages/GourmetDetail/GourmetDetail';
 import GourmetList from './pages/GourmetList/GourmetList';
+import Review from './pages/Review/Review';
 import Nav from './components/Nav/Nav';
 import Footer from './components/Footer/Footer';
 
@@ -18,6 +19,7 @@ const Router = () => {
         <Route path="/Detail" element={<GourmetDetail />} />
         <Route path="/List" element={<GourmetList />} />
         <Route path="/Signup" element={<Signup />} />
+        <Route path="/Review" element={<Review />} />
       </Routes>
       <Footer />
     </BrowserRouter>
